@@ -32,11 +32,7 @@ int main()
             
      } 
     
-    /*   if(cA != rB){      
-       cout<<"Error :";      
-       cout<<"The row of Matrix A  is not equal to " ;
-       cout<<"the column of Matrix B \n"; 
-       }*/
+    
       else{   
       
       for(i=0;i<rA;i++){
@@ -61,8 +57,7 @@ int main()
           C[i][j] = 0;
          for(k=0;k<cA;k++) 
          {
-             //sum  =  sum + A[rA][k]*B[k][cB];  
-             
+                 
              C[i][j] = C[i][j] + A[i][k]*B[k][j];			                     
          }
         }
@@ -73,7 +68,6 @@ int main()
       for(i=0;i<rA;i++){              
          for(j=0;j<cB;j++){
             cout<<"\t"<<C[i][j]<<" ";
-           // cout<<"\t"<<sum<<" ";                       
         }
         cout<<endl;
       } 
